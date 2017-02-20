@@ -1,9 +1,8 @@
 version: 0.0
 os: linux 
 files:
-  files:
   - source: /
-    destination: /var/www/2018
+    destination: /var/www/nds2018
 hooks:
   AfterInstall:
     - location: scripts/rsync.sh
