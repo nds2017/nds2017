@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/nds2018
 hooks:
- BeforeInstall:
+  BeforeInstall:
     - location: scripts/clear.sh
       timeout: 90
       runas: root
