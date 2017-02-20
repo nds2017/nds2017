@@ -2,12 +2,12 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /var/www/nds2018
+    destination: /tmp/deploy-current/
 hooks:
-  BeforeInstall:
-    - location: scripts/clear.sh
-      timeout: 90
-      runas: root
+#  BeforeInstall:
+#    - location: scripts/clear.sh
+#      timeout: 90
+ #     runas: root
   AfterInstall:
     - location: scripts/rsync.sh
       timeout: 90
